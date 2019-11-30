@@ -232,17 +232,6 @@ VBAT decoupling cap
 Text Notes 10400 3800 0    39   ~ 0
 VDD decoupling caps
 $Comp
-L power:VDD #PWR0109
-U 1 1 5DE19EB9
-P 4550 3100
-F 0 "#PWR0109" H 4550 2950 50  0001 C CNN
-F 1 "VDD" H 4567 3273 50  0000 C CNN
-F 2 "" H 4550 3100 50  0001 C CNN
-F 3 "" H 4550 3100 50  0001 C CNN
-	1    4550 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5DE1ABC6
 P 3950 3150
@@ -265,7 +254,7 @@ F 3 "" H 3950 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 3000 4550 3000
+	3950 3000 4300 3000
 $Comp
 L Device:C C?
 U 1 1 5DE1BE22
@@ -653,4 +642,33 @@ F 3 "" H 8000 5100 50  0001 C CNN
 $EndComp
 Text Notes 7100 6950 0    118  ~ 0
 STM32F401RET6 Hierarchical Block
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DE2F79B
+P 4550 3150
+F 0 "#PWR?" H 4550 3000 50  0001 C CNN
+F 1 "+3.3V" H 4565 3323 50  0000 C CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "" H 4550 3150 50  0001 C CNN
+	1    4550 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3100 4550 3150
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DE3436C
+P 4300 3300
+F 0 "#FLG?" H 4300 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3473 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "~" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3300 4300 3000
+Connection ~ 4300 3000
+Wire Wire Line
+	4300 3000 4550 3000
 $EndSCHEMATC
