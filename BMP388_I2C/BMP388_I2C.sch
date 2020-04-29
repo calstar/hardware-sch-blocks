@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7300 6900 0    118  ~ 0
 BMP388 Hierarchical Block (I2C)
 $Comp
-L star-common-lib:BMP388 U?
+L core-rescue:BMP388-star-common-lib U?
 U 1 1 5E6D1ACA
 P 5850 4050
 AR Path="/5E6D1ACA" Ref="U?"  Part="1" 
