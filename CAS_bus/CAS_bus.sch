@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -536,4 +536,124 @@ Wire Wire Line
 	8550 2000 8700 2000
 Wire Wire Line
 	8700 2000 8700 1850
+Text HLabel 5900 5100 2    50   Input ~ 0
+DCMI_D0
+Text HLabel 4400 5100 0    50   Input ~ 0
+DCMI_D1
+Text HLabel 5900 5200 2    50   Input ~ 0
+DCMI_D2
+Text HLabel 4400 5200 0    50   Input ~ 0
+DCMI_D3
+Text HLabel 5900 5300 2    50   Input ~ 0
+DCMI_D4
+Text HLabel 4400 5300 0    50   Input ~ 0
+DCMI_D5
+Text HLabel 5900 5400 2    50   Input ~ 0
+DCMI_D6
+Text HLabel 4400 5400 0    50   Input ~ 0
+DCMI_D7
+Text HLabel 5900 5500 2    50   Input ~ 0
+DCMI_D8
+Text HLabel 4400 5500 0    50   Input ~ 0
+DCMI_D9
+Text HLabel 5900 5600 2    50   Input ~ 0
+DCMI_D10
+Text HLabel 4400 5600 0    50   Input ~ 0
+DCMI_D11
+Text HLabel 5900 5700 2    50   Input ~ 0
+DCMI_D12
+Text HLabel 4400 5700 0    50   Input ~ 0
+DCMI_D13
+Text HLabel 5900 5800 2    50   Input ~ 0
+DCMI_HSYNC
+Text HLabel 4400 5800 0    50   Input ~ 0
+DCMI_VSYNC
+Text HLabel 5900 6100 2    50   Input ~ 0
+DCMI_PIXCLK
+$Comp
+L power:GND #PWR?
+U 1 1 5EF691F9
+P 5900 5900
+F 0 "#PWR?" H 5900 5650 50  0001 C CNN
+F 1 "GND" V 5905 5772 50  0000 R CNN
+F 2 "" H 5900 5900 50  0001 C CNN
+F 3 "" H 5900 5900 50  0001 C CNN
+	1    5900 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF69A47
+P 4400 5900
+F 0 "#PWR?" H 4400 5650 50  0001 C CNN
+F 1 "GND" V 4405 5772 50  0000 R CNN
+F 2 "" H 4400 5900 50  0001 C CNN
+F 3 "" H 4400 5900 50  0001 C CNN
+	1    4400 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF6A104
+P 4400 6000
+F 0 "#PWR?" H 4400 5750 50  0001 C CNN
+F 1 "GND" V 4405 5872 50  0000 R CNN
+F 2 "" H 4400 6000 50  0001 C CNN
+F 3 "" H 4400 6000 50  0001 C CNN
+	1    4400 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF6A602
+P 5900 6000
+F 0 "#PWR?" H 5900 5750 50  0001 C CNN
+F 1 "GND" V 5905 5872 50  0000 R CNN
+F 2 "" H 5900 6000 50  0001 C CNN
+F 3 "" H 5900 6000 50  0001 C CNN
+	1    5900 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 6100 5750 6100
+Wire Wire Line
+	5750 6000 5900 6000
+Wire Wire Line
+	5900 5900 5750 5900
+Wire Wire Line
+	5750 5800 5900 5800
+Wire Wire Line
+	5900 5700 5750 5700
+Wire Wire Line
+	5750 5600 5900 5600
+Wire Wire Line
+	5900 5500 5750 5500
+Wire Wire Line
+	5750 5400 5900 5400
+Wire Wire Line
+	5900 5300 5750 5300
+Wire Wire Line
+	5750 5200 5900 5200
+Wire Wire Line
+	5900 5100 5750 5100
+Wire Wire Line
+	4550 5100 4400 5100
+Wire Wire Line
+	4400 5200 4550 5200
+Wire Wire Line
+	4550 5300 4400 5300
+Wire Wire Line
+	4400 5400 4550 5400
+Wire Wire Line
+	4550 5500 4400 5500
+Wire Wire Line
+	4400 5600 4550 5600
+Wire Wire Line
+	4550 5700 4400 5700
+Wire Wire Line
+	4400 5800 4550 5800
+Wire Wire Line
+	4400 5900 4550 5900
+Wire Wire Line
+	4550 6000 4400 6000
 $EndSCHEMATC
