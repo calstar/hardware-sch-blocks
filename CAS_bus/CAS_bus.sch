@@ -435,28 +435,6 @@ Wire Wire Line
 	8550 2000 8700 2000
 Wire Wire Line
 	8700 2000 8700 1850
-$Comp
-L star-sch-block-symbols:CAS_stacking J?
-U 1 1 5EF11983
-P 5150 2750
-F 0 "J?" H 5150 3967 50  0000 C CNN
-F 1 "CAS_stacking" H 5150 3876 50  0000 C CNN
-F 2 "" H 5250 3700 50  0001 C CNN
-F 3 "" H 5250 3700 50  0001 C CNN
-	1    5150 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L star-sch-block-symbols:CAS_stacking J?
-U 2 1 5EF130AD
-P 5150 5150
-F 0 "J?" H 5150 6367 50  0000 C CNN
-F 1 "CAS_stacking" H 5150 6276 50  0000 C CNN
-F 2 "" H 5250 6100 50  0001 C CNN
-F 3 "" H 5250 6100 50  0001 C CNN
-	2    5150 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 3500 4450 3500
 Wire Wire Line
@@ -536,4 +514,26 @@ Text HLabel 6000 3300 2    50   Input ~ 0
 SPI0_SCK
 Text HLabel 4300 2800 0    50   Input ~ 0
 SPI0_nSS1
+$Comp
+L star-sch-block-symbols:CAS_stacking J?
+U 1 1 5EF72F3E
+P 5150 2750
+F 0 "J?" H 5150 3967 50  0000 C CNN
+F 1 "CAS_stacking" H 5150 3876 50  0000 C CNN
+F 2 "" H 5250 3700 50  0001 C CNN
+F 3 "" H 5250 3700 50  0001 C CNN
+	1    5150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L star-sch-block-symbols:CAS_stacking J?
+U 2 1 5EF77901
+P 5150 5150
+F 0 "J?" H 5150 6367 50  0000 C CNN
+F 1 "CAS_stacking" H 5150 6276 50  0000 C CNN
+F 2 "" H 5250 6100 50  0001 C CNN
+F 3 "" H 5250 6100 50  0001 C CNN
+	2    5150 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

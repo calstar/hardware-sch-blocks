@@ -1,3 +1,4 @@
 *.sch-bak
 *.bak
 */fp-info-cache
+*/sym-lib-table
