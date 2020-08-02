@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +29.5V
+D Power symbol creates a global label with name "+29.5V"
+K power-flag
+$ENDCMP
+#
 $CMP 74HCT596
 D 8-bit serial in/out Shift Register Open Collector Outputs
 K HCTMOS SR OpenCollector
@@ -28,10 +33,19 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP LT1807
+D Dual Operational Amplifier
+K dual opamp
+$ENDCMP
+#
 $CMP SN74HC594
 D 8-bit serial in/out Shift Register Open Collector Outputs
 K HCMOS SR OpenCollector
 F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc594
+$ENDCMP
+#
+$CMP SST26VF064B
+K flash memory spi
 $ENDCMP
 #
 #End Doc Library
