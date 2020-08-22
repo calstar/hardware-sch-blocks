@@ -1,4 +1,4 @@
-(module CAS_physical (layer F.Cu) (tedit 5EEFEFA6)
+(module CAS_physical (layer F.Cu) (tedit 5F417CF4)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -34,6 +34,7 @@
   (fp_line (start 59.69 63.5) (end 3.81 63.5) (layer Edge.Cuts) (width 0.12))
   (fp_line (start 63.5 3.81) (end 63.5 50.165) (layer Edge.Cuts) (width 0.12))
   (fp_line (start 3.81 0) (end 59.69 0) (layer Edge.Cuts) (width 0.12))
+  (fp_poly (pts (xy 24.892 62.738) (xy 11.176 62.738) (xy 11.176 61.722) (xy 24.892 61.722)) (layer F.SilkS) (width 0.1))
   (fp_text user ESQT-120-XX-XX-D (at 6.223 24.558 90) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.015)))
   )
@@ -65,7 +66,6 @@
   (fp_text user SN: (at 9.144 62.23) (layer F.SilkS)
     (effects (font (size 0.75 0.75) (thickness 0.084375)) (justify left))
   )
-  (fp_poly (pts (xy 17.018 62.738) (xy 11.176 62.738) (xy 11.176 61.722) (xy 17.018 61.722)) (layer F.SilkS) (width 0.1))
   (pad A27 thru_hole circle (at 1.54 38.75 90) (size 1.397 1.397) (drill 0.9144) (layers *.Cu *.Mask))
   (pad A39 thru_hole circle (at 1.54 50.7499 90) (size 1.397 1.397) (drill 0.9144) (layers *.Cu *.Mask))
   (pad A22 thru_hole circle (at 3.54 32.75 90) (size 1.397 1.397) (drill 0.9144) (layers *.Cu *.Mask))
@@ -150,4 +150,14 @@
   (pad "" np_thru_hole circle (at 3.81 59.69) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 59.69 59.69) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 59.69 3.81) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/ESQT-120-02-F-D-500.STEP
+    (offset (xyz 2.54 -31.75 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/ESQT-120-02-F-D-500.STEP
+    (offset (xyz 60.96 -28.70199999999999 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
 )

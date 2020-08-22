@@ -16,6 +16,10 @@ $CMP AP1509-33
 F https://www.diodes.com/assets/Datasheets/AP1509.pdf
 $ENDCMP
 #
+$CMP BMP388
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001.pdf
+$ENDCMP
+#
 $CMP CLM-120-02-F-D-P
 D Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
