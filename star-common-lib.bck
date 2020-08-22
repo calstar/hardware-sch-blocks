@@ -1,5 +1,14 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +29.5V
+D Power symbol creates a global label with name "+29.5V"
+K power-flag
+$ENDCMP
+#
+$CMP +MUX
+D Power symbol creates a global label with name "+MUX"
+$ENDCMP
+#
 $CMP 74HCT596
 D 8-bit serial in/out Shift Register Open Collector Outputs
 K HCTMOS SR OpenCollector
@@ -10,6 +19,10 @@ $CMP 74LS596
 D 8-bit serial in/out Shift Register Open Collector outputs
 K HCMOS SR OpenCollector
 F http://www.ti.com/lit/gpn/sn74ls596
+$ENDCMP
+#
+$CMP AP1509-33
+F https://www.diodes.com/assets/Datasheets/AP1509.pdf
 $ENDCMP
 #
 $CMP CLM-120-02-F-D-P
@@ -24,10 +37,55 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP LT1807
+D Dual Operational Amplifier
+K dual opamp
+$ENDCMP
+#
 $CMP SN74HC594
 D 8-bit serial in/out Shift Register Open Collector Outputs
 K HCMOS SR OpenCollector
 F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc594
+$ENDCMP
+#
+$CMP SST26VF064B
+K flash memory spi
+$ENDCMP
+#
+$CMP TVS0500DRV
+D Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs0500.pdf
+$ENDCMP
+#
+$CMP TVS1400DRV
+D Flat-Clamp Surge Protection Device. 14Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs1400.pdf
+$ENDCMP
+#
+$CMP TVS1800DRV
+D Flat-Clamp Surge Protection Device. 18Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs1800.pdf
+$ENDCMP
+#
+$CMP TVS2200DRV
+D Flat-Clamp Surge Protection Device. 22Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs2200.pdf
+$ENDCMP
+#
+$CMP TVS2700DRV
+D Flat-Clamp Surge Protection Device. 27Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs2700.pdf
+$ENDCMP
+#
+$CMP TVS3300DRV
+D Flat-Clamp Surge Protection Device. 33Vrwm, WSON-6
+K EMI, ESD, TVS protection transient
+F http://www.ti.com/lit/ds/symlink/tvs3300.pdf
 $ENDCMP
 #
 #End Doc Library
