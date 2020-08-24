@@ -1,4 +1,4 @@
-(module CUI_PJ-047AH (layer F.Cu) (tedit 5F28CD37)
+(module CUI_PJ-047AH (layer F.Cu) (tedit 5F4428C2)
   (fp_text reference REF** (at -6.35 0 270) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
@@ -34,7 +34,7 @@
     (zone_connect 2))
   (pad "" np_thru_hole circle (at 1.75 0) (size 2.4 2.4) (drill 2.4) (layers *.Cu *.Mask)
     (clearance 0.254))
-  (model ${KIPRJMOD}/3D/CUI_DEVICES_PJ-047AH.STEP
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/CUI_DEVICES_PJ-047AH.STEP
     (offset (xyz 5.76 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 -90))
