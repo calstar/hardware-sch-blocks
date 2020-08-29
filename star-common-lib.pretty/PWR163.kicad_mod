@@ -1,4 +1,4 @@
-(module PWR163 (layer F.Cu) (tedit 5F13977C)
+(module PWR163 (layer F.Cu) (tedit 5F4ACC15)
   (fp_text reference REF** (at 0.508 -12.192) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -8,7 +8,7 @@
   (pad 3 smd rect (at 0 -4.2545) (size 7.874 8.509) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -2.54 3.683) (size 1.651 3.81) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at 2.54 3.683) (size 1.651 3.81) (layers F.Cu F.Paste F.Mask))
-  (model /home/neelay/Documents/Calstar/cas-hardware/hardware-sch-blocks/star-common-3d/pwr163.stp
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/pwr163.stp
     (offset (xyz 0 3.81 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 180 0))
