@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -66,17 +66,8 @@ Connection ~ 5800 4750
 Wire Wire Line
 	5800 4750 5800 4700
 Wire Wire Line
-	6200 4700 6200 4750
-Wire Wire Line
-	6100 4700 6100 4750
-Connection ~ 6100 4750
-Wire Wire Line
-	6100 4750 6200 4750
-Wire Wire Line
 	6000 4700 6000 4750
 Connection ~ 6000 4750
-Wire Wire Line
-	6000 4750 6100 4750
 Wire Wire Line
 	5300 4400 5250 4400
 Wire Wire Line
@@ -105,54 +96,15 @@ Wire Wire Line
 	5250 4500 5250 4750
 $Comp
 L Device:R R?
-U 1 1 5E6B329F
-P 4950 4450
-AR Path="/5E6B329F" Ref="R?"  Part="1" 
-AR Path="/5E6B2FC0/5E6B329F" Ref="R11"  Part="1" 
-F 0 "R11" V 4900 4250 50  0000 C CNN
-F 1 "10k" V 5000 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 4450 50  0001 C CNN
-F 3 "~" H 4950 4450 50  0001 C CNN
-	1    4950 4450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 4300 5200 4300
-Wire Wire Line
-	5200 4300 5200 4450
-Connection ~ 5200 4300
-Wire Wire Line
-	5200 4300 5300 4300
-$Comp
-L Device:R R?
-U 1 1 5E6B32AB
-P 4950 4050
-AR Path="/5E6B32AB" Ref="R?"  Part="1" 
-AR Path="/5E6B2FC0/5E6B32AB" Ref="R10"  Part="1" 
-F 0 "R10" V 4900 3850 50  0000 C CNN
-F 1 "10k" V 5000 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 4050 50  0001 C CNN
-F 3 "~" H 4950 4050 50  0001 C CNN
-	1    4950 4050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 4200 5200 4200
-Wire Wire Line
-	5200 4200 5200 4050
-Wire Wire Line
-	5200 4200 5300 4200
-$Comp
-L Device:R R?
 U 1 1 5E6B32B7
-P 4900 3850
+P 4900 3900
 AR Path="/5E6B32B7" Ref="R?"  Part="1" 
 AR Path="/5E6B2FC0/5E6B32B7" Ref="R9"  Part="1" 
-F 0 "R9" V 4850 4050 50  0000 C CNN
-F 1 "10k" V 4950 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3850 50  0001 C CNN
-F 3 "~" H 4900 3850 50  0001 C CNN
-	1    4900 3850
+F 0 "R9" V 4850 4100 50  0000 C CNN
+F 1 "10k" V 4950 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3900 50  0001 C CNN
+F 3 "~" H 4900 3900 50  0001 C CNN
+	1    4900 3900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -209,11 +161,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 4750 5250 4750
 Wire Wire Line
-	4650 4050 4650 4250
-Connection ~ 4650 4250
-Wire Wire Line
-	4650 4250 4650 4450
-Wire Wire Line
 	5200 3550 5300 3550
 Wire Wire Line
 	5050 3400 5300 3400
@@ -232,12 +179,6 @@ F 3 "" H 5400 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 5100 5400 5100
-Wire Wire Line
-	5300 3900 5200 3900
-Wire Wire Line
-	5200 3900 5200 3850
-Wire Wire Line
-	5200 3850 5050 3850
 Wire Wire Line
 	6000 3250 6000 3300
 $Comp
@@ -275,35 +216,14 @@ Connection ~ 4550 3400
 Wire Wire Line
 	4550 3400 4550 3250
 Wire Wire Line
-	4750 3850 4550 3850
-Connection ~ 4550 3850
-Wire Wire Line
-	4550 3850 4550 3400
-Connection ~ 4550 4250
-Wire Wire Line
-	4550 4250 4550 3850
+	4750 3900 4550 3900
 Wire Wire Line
 	4750 4750 4550 4750
 Connection ~ 4550 4750
 Wire Wire Line
-	4550 4750 4550 4250
-Wire Wire Line
 	5400 5100 5400 5000
 Wire Wire Line
 	5800 4750 5800 5100
-Wire Wire Line
-	4550 4250 4650 4250
-Wire Wire Line
-	4800 4450 4650 4450
-Wire Wire Line
-	4650 4050 4800 4050
-Wire Wire Line
-	5100 4050 5200 4050
-Wire Wire Line
-	5100 4450 5200 4450
-Wire Wire Line
-	6200 4750 6900 4750
-Connection ~ 6200 4750
 Wire Wire Line
 	6600 4500 6500 4500
 Wire Wire Line
@@ -318,7 +238,19 @@ Text HLabel 5150 4200 0    50   Output ~ 0
 SDA
 Text HLabel 5150 4300 0    50   Output ~ 0
 SCL
-Connection ~ 5200 4200
 Text Notes 7300 6900 0    118  ~ 0
 BNO055 Hierarchical Block (I2C)
+Wire Wire Line
+	6000 4750 6900 4750
+Wire Wire Line
+	5150 4300 5300 4300
+Wire Wire Line
+	5150 4200 5300 4200
+Connection ~ 4550 3900
+Wire Wire Line
+	4550 3900 4550 4750
+Wire Wire Line
+	4550 3400 4550 3900
+Wire Wire Line
+	5050 3900 5300 3900
 $EndSCHEMATC

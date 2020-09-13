@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -16,19 +16,6 @@ $EndDescr
 Text Notes 7300 6900 0    118  ~ 0
 BMP388 Hierarchical Block (I2C)
 $Comp
-L core-rescue:BMP388-star-common-lib U?
-U 1 1 5E6D1ACA
-P 5850 4050
-AR Path="/5E6D1ACA" Ref="U?"  Part="1" 
-AR Path="/5E6CF5BB/5E6D1ACA" Ref="U"  Part="1" 
-F 0 "U" H 5850 4525 50  0000 C CNN
-F 1 "BMP388" H 5850 4434 50  0000 C CNN
-F 2 "star-common-lib:BMP388" H 5850 4600 50  0001 C CNN
-F 3 "" H 5850 4450 50  0001 C CNN
-	1    5850 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Net-Tie_2 NT?
 U 1 1 5E6D1AD1
 P 6300 4000
@@ -37,17 +24,6 @@ F 1 "Net-Tie_2" H 6400 4050 50  0000 C CNN
 F 2 "" H 6300 4000 50  0001 C CNN
 F 3 "~" H 6300 4000 50  0001 C CNN
 	1    6300 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E6D1AD8
-P 6250 4400
-F 0 "R?" H 6320 4446 50  0000 L CNN
-F 1 "4.7k" H 6320 4355 50  0000 L CNN
-F 2 "" V 6180 4400 50  0001 C CNN
-F 3 "~" H 6250 4400 50  0001 C CNN
-	1    6250 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -66,40 +42,17 @@ Wire Wire Line
 Wire Wire Line
 	6300 4100 6300 4150
 Wire Wire Line
-	6650 4150 6650 4100
-Wire Wire Line
-	6300 4150 6650 4150
-$Comp
-L Device:R R?
-U 1 1 5E6D1AE9
-P 6650 3950
-F 0 "R?" H 6720 3996 50  0000 L CNN
-F 1 "4.7k" H 6720 3905 50  0000 L CNN
-F 2 "" V 6580 3950 50  0001 C CNN
-F 3 "~" H 6650 3950 50  0001 C CNN
-	1    6650 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6200 4200 6250 4200
 Wire Wire Line
 	6250 4200 6250 4250
 Wire Wire Line
 	6300 3900 6300 3750
 Wire Wire Line
-	6300 3750 6350 3750
-Wire Wire Line
 	6350 3500 6250 3500
 Wire Wire Line
 	6250 3800 6200 3800
 Wire Wire Line
-	6700 4150 6650 4150
-Connection ~ 6650 4150
-Wire Wire Line
 	6400 4250 6250 4250
-Connection ~ 6250 4250
-Wire Wire Line
-	6650 3800 6650 3750
 $Comp
 L Device:C C?
 U 1 1 5E6D1AFF
@@ -191,19 +144,6 @@ F 3 "" H 6650 3750 50  0001 C CNN
 	1    6650 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E6D1B33
-P 6050 4550
-F 0 "#PWR?" H 6050 4400 50  0001 C CNN
-F 1 "+3.3V" H 6050 4700 50  0000 C CNN
-F 2 "" H 6050 4550 50  0001 C CNN
-F 3 "" H 6050 4550 50  0001 C CNN
-	1    6050 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 4550 6050 4550
 Wire Wire Line
 	6250 3500 6250 3800
 Wire Wire Line
@@ -221,10 +161,23 @@ Wire Wire Line
 Connection ~ 4850 3700
 Text HLabel 6350 3500 2    50   Input ~ 0
 INT
-Text HLabel 6350 3750 2    50   Input ~ 0
-CSB
 Text HLabel 6700 4150 2    50   Output ~ 0
 SDA
 Text HLabel 6400 4250 2    50   Output ~ 0
 SCL
+Wire Wire Line
+	6300 3750 6650 3750
+$Comp
+L star-common-lib:BMP388 U?
+U 1 1 5F616247
+P 5850 4050
+F 0 "U?" H 5850 4525 50  0000 C CNN
+F 1 "BMP388" H 5850 4434 50  0000 C CNN
+F 2 "star-common-lib:BMP388" H 5850 4600 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001.pdf" H 5850 4450 50  0001 C CNN
+	1    5850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4150 6700 4150
 $EndSCHEMATC
