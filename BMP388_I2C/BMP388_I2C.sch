@@ -27,17 +27,6 @@ F 3 "~" H 6300 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5E6D1AD8
-P 6250 4400
-F 0 "R?" H 6320 4446 50  0000 L CNN
-F 1 "4.7k" H 6320 4355 50  0000 L CNN
-F 2 "" V 6180 4400 50  0001 C CNN
-F 3 "~" H 6250 4400 50  0001 C CNN
-	1    6250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E6D1ADF
 P 6400 4000
@@ -53,21 +42,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 4100 6300 4150
 Wire Wire Line
-	6650 4150 6650 4100
-Wire Wire Line
-	6300 4150 6650 4150
-$Comp
-L Device:R R?
-U 1 1 5E6D1AE9
-P 6650 3950
-F 0 "R?" H 6720 3996 50  0000 L CNN
-F 1 "4.7k" H 6720 3905 50  0000 L CNN
-F 2 "" V 6580 3950 50  0001 C CNN
-F 3 "~" H 6650 3950 50  0001 C CNN
-	1    6650 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6200 4200 6250 4200
 Wire Wire Line
 	6250 4200 6250 4250
@@ -78,13 +52,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3800 6200 3800
 Wire Wire Line
-	6700 4150 6650 4150
-Connection ~ 6650 4150
-Wire Wire Line
 	6400 4250 6250 4250
-Connection ~ 6250 4250
-Wire Wire Line
-	6650 3800 6650 3750
 $Comp
 L Device:C C?
 U 1 1 5E6D1AFF
@@ -176,19 +144,6 @@ F 3 "" H 6650 3750 50  0001 C CNN
 	1    6650 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E6D1B33
-P 6050 4550
-F 0 "#PWR?" H 6050 4400 50  0001 C CNN
-F 1 "+3.3V" H 6050 4700 50  0000 C CNN
-F 2 "" H 6050 4550 50  0001 C CNN
-F 3 "" H 6050 4550 50  0001 C CNN
-	1    6050 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 4550 6050 4550
 Wire Wire Line
 	6250 3500 6250 3800
 Wire Wire Line
@@ -212,7 +167,6 @@ Text HLabel 6400 4250 2    50   Output ~ 0
 SCL
 Wire Wire Line
 	6300 3750 6650 3750
-Connection ~ 6650 3750
 $Comp
 L star-common-lib:BMP388 U?
 U 1 1 5F616247
@@ -224,4 +178,6 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-D
 	1    5850 4050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6300 4150 6700 4150
 $EndSCHEMATC
