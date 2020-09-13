@@ -16,19 +16,6 @@ $EndDescr
 Text Notes 7300 6900 0    118  ~ 0
 BMP388 Hierarchical Block (I2C)
 $Comp
-L core-rescue:BMP388-star-common-lib U?
-U 1 1 5E6D1ACA
-P 5850 4050
-AR Path="/5E6D1ACA" Ref="U?"  Part="1" 
-AR Path="/5E6CF5BB/5E6D1ACA" Ref="U"  Part="1" 
-F 0 "U" H 5850 4525 50  0000 C CNN
-F 1 "BMP388" H 5850 4434 50  0000 C CNN
-F 2 "star-common-lib:BMP388" H 5850 4600 50  0001 C CNN
-F 3 "" H 5850 4450 50  0001 C CNN
-	1    5850 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Net-Tie_2 NT?
 U 1 1 5E6D1AD1
 P 6300 4000
@@ -226,4 +213,15 @@ SCL
 Wire Wire Line
 	6300 3750 6650 3750
 Connection ~ 6650 3750
+$Comp
+L star-common-lib:BMP388 U?
+U 1 1 5F616247
+P 5850 4050
+F 0 "U?" H 5850 4525 50  0000 C CNN
+F 1 "BMP388" H 5850 4434 50  0000 C CNN
+F 2 "star-common-lib:BMP388" H 5850 4600 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001.pdf" H 5850 4450 50  0001 C CNN
+	1    5850 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

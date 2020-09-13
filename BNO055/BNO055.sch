@@ -66,17 +66,8 @@ Connection ~ 5800 4750
 Wire Wire Line
 	5800 4750 5800 4700
 Wire Wire Line
-	6200 4700 6200 4750
-Wire Wire Line
-	6100 4700 6100 4750
-Connection ~ 6100 4750
-Wire Wire Line
-	6100 4750 6200 4750
-Wire Wire Line
 	6000 4700 6000 4750
 Connection ~ 6000 4750
-Wire Wire Line
-	6000 4750 6100 4750
 Wire Wire Line
 	5300 4400 5250 4400
 Wire Wire Line
@@ -302,9 +293,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 4450 5200 4450
 Wire Wire Line
-	6200 4750 6900 4750
-Connection ~ 6200 4750
-Wire Wire Line
 	6600 4500 6500 4500
 Wire Wire Line
 	6500 4400 6900 4400
@@ -321,4 +309,6 @@ SCL
 Connection ~ 5200 4200
 Text Notes 7300 6900 0    118  ~ 0
 BNO055 Hierarchical Block (I2C)
+Wire Wire Line
+	6000 4750 6900 4750
 $EndSCHEMATC

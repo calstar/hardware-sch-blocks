@@ -178,15 +178,13 @@ Text Notes 7300 5000 0    59   ~ 0
 MAX17048 (Fuel Gauge)
 NoConn ~ 7300 3950
 $Comp
-L core-rescue:MAX17048G+-max17048 U6
-U 1 1 5F7BC92F
+L star-common-lib:MAX17048G+ U?
+U 1 1 5F61DB0A
 P 4900 3950
-AR Path="/5F7BC92F" Ref="U6"  Part="1" 
-AR Path="/5F61393C/5F7BC92F" Ref="U6"  Part="1" 
-F 0 "U6" H 6100 4337 60  0000 C CNN
-F 1 "MAX17048G+" H 6100 4231 60  0000 C CNN
+F 0 "U?" H 6100 4443 60  0000 C CNN
+F 1 "MAX17048G+" H 6100 4337 60  0000 C CNN
 F 2 "21-0168E_T822-3_MXM" H 6100 4190 60  0001 C CNN
-F 3 "" H 4900 3950 60  0000 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf" H 6100 4231 60  0000 C CNN
 	1    4900 3950
 	1    0    0    -1  
 $EndComp
