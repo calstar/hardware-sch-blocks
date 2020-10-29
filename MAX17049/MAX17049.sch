@@ -26,13 +26,13 @@ Wire Wire Line
 Wire Wire Line
 	4100 4050 4100 4150
 $Comp
-L Device:C C?
+L Device:C C1501
 U 1 1 5F266736
 P 4100 4300
-AR Path="/5F28172D/5F266736" Ref="C?"  Part="1" 
-AR Path="/5F610235/5F266736" Ref="C?"  Part="1" 
-AR Path="/5F6110E7/5F266736" Ref="C?"  Part="1" 
-AR Path="/5F61393C/5F266736" Ref="C?"  Part="1" 
+AR Path="/5F28172D/5F266736" Ref="C1501"  Part="1" 
+AR Path="/5F610235/5F266736" Ref="C1501"  Part="1" 
+AR Path="/5F6110E7/5F266736" Ref="C1501"  Part="1" 
+AR Path="/5F61393C/5F266736" Ref="C1501"  Part="1" 
 AR Path="/5F266736" Ref="C1501"  Part="1" 
 F 0 "C1501" H 4215 4346 50  0000 L CNN
 F 1 "0.1u" H 4215 4255 50  0000 L CNN
