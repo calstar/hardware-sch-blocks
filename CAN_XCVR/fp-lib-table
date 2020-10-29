@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name star-common-lib)(type KiCad)(uri ${KIPRJMOD}/hardware-sch-blocks/star-common-lib.pretty)(options "")(descr ""))
-)

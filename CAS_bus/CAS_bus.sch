@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -515,23 +515,23 @@ SPI0_SCK
 Text HLabel 4300 2800 0    50   Input ~ 0
 SPI0_nSS1
 $Comp
-L star-common-lib:CAS_stacking J1
+L star-common-lib:CAS_stacking J1001
 U 1 1 5F2F934D
 P 5150 2750
-F 0 "J1" H 5150 3967 50  0000 C CNN
+F 0 "J1001" H 5150 3967 50  0000 C CNN
 F 1 "CAS_stacking" H 5150 3876 50  0000 C CNN
-F 2 "" H 5250 3700 50  0001 C CNN
+F 2 "star-common-lib:CAS_physical" H 5250 3700 50  0001 C CNN
 F 3 "" H 5250 3700 50  0001 C CNN
 	1    5150 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L star-common-lib:CAS_stacking J1
+L star-common-lib:CAS_stacking J1001
 U 2 1 5F2FC6A4
 P 5150 5150
-F 0 "J1" H 5150 6367 50  0000 C CNN
+F 0 "J1001" H 5150 6367 50  0000 C CNN
 F 1 "CAS_stacking" H 5150 6276 50  0000 C CNN
-F 2 "" H 5250 6100 50  0001 C CNN
+F 2 "star-common-lib:CAS_physical" H 5250 6100 50  0001 C CNN
 F 3 "" H 5250 6100 50  0001 C CNN
 	2    5150 5150
 	1    0    0    -1  
