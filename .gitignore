@@ -5,4 +5,4 @@
 *.pro
 fp-info-cache
 *-cache.lib
-fp-lib-table
+~

@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4050 4050 0    50   Input ~ 0
+BATT+
+Text HLabel 8000 4350 2    50   Input ~ 0
+INT
+Text HLabel 8000 4050 2    50   Input ~ 0
+SDA
+Text HLabel 8000 4150 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4050 4050 4100 4050
+Wire Wire Line
+	4100 4050 4100 4150
+$Comp
+L Device:C C?
+U 1 1 5F266736
+P 4100 4300
+AR Path="/5F28172D/5F266736" Ref="C?"  Part="1" 
+AR Path="/5F610235/5F266736" Ref="C?"  Part="1" 
+AR Path="/5F6110E7/5F266736" Ref="C?"  Part="1" 
+AR Path="/5F61393C/5F266736" Ref="C?"  Part="1" 
+AR Path="/5F266736" Ref="C1501"  Part="1" 
+F 0 "C1501" H 4215 4346 50  0000 L CNN
+F 1 "0.1u" H 4215 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 4150 50  0001 C CNN
+F 3 "~" H 4100 4300 50  0001 C CNN
+F 4 "399-1100-1-ND" H 4100 4300 50  0001 C CNN "DIGIKEY"
+F 5 "C0603C104Z3VACTU" H 4100 4300 50  0001 C CNN "MANF"
+	1    4100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F266DAF
+P 4100 4550
+AR Path="/5F28172D/5F266DAF" Ref="#PWR?"  Part="1" 
+AR Path="/5F610235/5F266DAF" Ref="#PWR?"  Part="1" 
+AR Path="/5F6110E7/5F266DAF" Ref="#PWR?"  Part="1" 
+AR Path="/5F61393C/5F266DAF" Ref="#PWR?"  Part="1" 
+AR Path="/5F266DAF" Ref="#PWR01501"  Part="1" 
+F 0 "#PWR01501" H 4100 4300 50  0001 C CNN
+F 1 "GND" H 4105 4377 50  0000 C CNN
+F 2 "" H 4100 4550 50  0001 C CNN
+F 3 "" H 4100 4550 50  0001 C CNN
+	1    4100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4450 4100 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5F2672F0
+P 4800 4400
+AR Path="/5F28172D/5F2672F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F610235/5F2672F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F6110E7/5F2672F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F61393C/5F2672F0" Ref="#PWR?"  Part="1" 
+AR Path="/5F2672F0" Ref="#PWR01504"  Part="1" 
+F 0 "#PWR01504" H 4800 4150 50  0001 C CNN
+F 1 "GND" H 4805 4227 50  0000 C CNN
+F 2 "" H 4800 4400 50  0001 C CNN
+F 3 "" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F26E3EE
+P 8300 4250
+AR Path="/5F28172D/5F26E3EE" Ref="#PWR?"  Part="1" 
+AR Path="/5F610235/5F26E3EE" Ref="#PWR?"  Part="1" 
+AR Path="/5F6110E7/5F26E3EE" Ref="#PWR?"  Part="1" 
+AR Path="/5F61393C/5F26E3EE" Ref="#PWR?"  Part="1" 
+AR Path="/5F26E3EE" Ref="#PWR01505"  Part="1" 
+F 0 "#PWR01505" H 8300 4000 50  0001 C CNN
+F 1 "GND" H 8305 4077 50  0000 C CNN
+F 2 "" H 8300 4250 50  0001 C CNN
+F 3 "" H 8300 4250 50  0001 C CNN
+	1    8300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4350 8000 4350
+Wire Wire Line
+	8000 4150 7300 4150
+Wire Wire Line
+	7300 4050 8000 4050
+Wire Notes Line
+	3100 3250 3100 5100
+Wire Notes Line
+	3100 5100 8450 5100
+Wire Notes Line
+	8450 5100 8450 3250
+Wire Notes Line
+	8450 3250 3100 3250
+Text Notes 7300 5000 0    59   ~ 0
+MAX17048 (Fuel Gauge)
+NoConn ~ 7300 3950
+$Comp
+L star-common-lib:MAX17048G+ U1501
+U 1 1 5F61DB0A
+P 4900 3950
+F 0 "U1501" H 6100 4443 60  0000 C CNN
+F 1 "MAX17049G+" H 6100 4337 60  0000 C CNN
+F 2 "Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm" H 6100 4190 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf" H 6100 4231 60  0000 C CNN
+F 4 "MAX17049G+-ND" H 4900 3950 50  0001 C CNN "DIGIKEY"
+F 5 "MAX17049G+" H 4900 3950 50  0001 C CNN "MANF"
+	1    4900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01502
+U 1 1 5F9A3E75
+P 4550 4300
+F 0 "#PWR01502" H 4550 4150 50  0001 C CNN
+F 1 "+3.3V" H 4550 4450 50  0000 C CNN
+F 2 "" H 4550 4300 50  0001 C CNN
+F 3 "" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 4050
+Wire Wire Line
+	4100 4050 4900 4050
+Wire Wire Line
+	4800 4400 4800 4250
+Wire Wire Line
+	4800 4250 4900 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5F9AF211
+P 4600 3900
+AR Path="/5F28172D/5F9AF211" Ref="#PWR?"  Part="1" 
+AR Path="/5F610235/5F9AF211" Ref="#PWR?"  Part="1" 
+AR Path="/5F6110E7/5F9AF211" Ref="#PWR?"  Part="1" 
+AR Path="/5F61393C/5F9AF211" Ref="#PWR?"  Part="1" 
+AR Path="/5F9AF211" Ref="#PWR01503"  Part="1" 
+F 0 "#PWR01503" H 4600 3650 50  0001 C CNN
+F 1 "GND" H 4450 3900 50  0000 C CNN
+F 2 "" H 4600 3900 50  0001 C CNN
+F 3 "" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3900 4600 3850
+Wire Wire Line
+	4600 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3950
+Wire Wire Line
+	4800 3950 4900 3950
+Wire Wire Line
+	4550 4300 4550 4350
+Wire Wire Line
+	4550 4350 4700 4350
+Wire Wire Line
+	4700 4350 4700 4150
+Wire Wire Line
+	4700 4150 4900 4150
+Wire Wire Line
+	8300 4250 7300 4250
+$EndSCHEMATC
