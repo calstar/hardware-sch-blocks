@@ -60,6 +60,14 @@ $CMP MT25QL01GBBB8ESF-0SIT
 F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
 $ENDCMP
 #
+$CMP MAX17048G+
+F https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf
+$ENDCMP
+#
+$CMP SC18IS600
+F https://www.nxp.com/docs/en/data-sheet/SC18IS600.pdf
+$ENDCMP
+#
 $CMP SN74HC594
 D 8-bit serial in/out Shift Register Open Collector Outputs
 K HCMOS SR OpenCollector
