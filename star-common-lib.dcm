@@ -35,15 +35,29 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP EVAL-ADXL372Z
+F https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADXL372Z.html#eb-overview
+$ENDCMP
+#
 $CMP FTMH-120-03-F-DV-P
 D Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
 #
+$CMP HSCDRRN001BDSA3
+D Differential Pressure Sensor
+K Differential pressure
+F https://sensing.honeywell.com/index.php?ci_id=151133
+$ENDCMP
+#
 $CMP LT1807
 D Dual Operational Amplifier
 K dual opamp
+$ENDCMP
+#
+$CMP MT25QL01GBBB8ESF-0SIT
+F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
 $ENDCMP
 #
 $CMP SN74HC594
@@ -54,6 +68,12 @@ $ENDCMP
 #
 $CMP SST26VF064B
 K flash memory spi
+$ENDCMP
+#
+$CMP TPD4E1U06
+D 4-Channel, High-Speed ESD Protection Device
+K ESD protection
+F https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf
 $ENDCMP
 #
 $CMP TVS0500DRV
