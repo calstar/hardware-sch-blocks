@@ -150,4 +150,14 @@
   (pad "" np_thru_hole circle (at 3.81 59.69) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 59.69 59.69) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 59.69 3.81) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/ESQT-120-02-F-D-500.STEP
+    (offset (xyz 2.54 -31.75 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
+  (model ${KIPRJMOD}/hardware-sch-blocks/star-common-3d/ESQT-120-02-F-D-500.STEP
+    (offset (xyz 60.96 -28.70199999999999 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
 )
