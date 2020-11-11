@@ -56,12 +56,12 @@ D Dual Operational Amplifier
 K dual opamp
 $ENDCMP
 #
-$CMP MT25QL01GBBB8ESF-0SIT
-F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
-$ENDCMP
-#
 $CMP MAX17048G+
 F https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf
+$ENDCMP
+#
+$CMP MT25QL01GBBB8ESF-0SIT
+F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
 $ENDCMP
 #
 $CMP SC18IS600
@@ -76,6 +76,24 @@ $ENDCMP
 #
 $CMP SST26VF064B
 K flash memory spi
+$ENDCMP
+#
+$CMP STS9P3LLH6
+D P-MOSFET transistor, -30 V, 12 mΩ, -9A
+K transistor PMOS P-MOS P-MOSFET SO-8
+F https://www.st.com/resource/en/datasheet/sts9p3llh6.pdf
+$ENDCMP
+#
+$CMP STUSB4500LQTR
+D Stand-alone USB Type-C controller (auto-run mode), QFN-24
+K USB Type C Sink
+F https://www.st.com/resource/en/datasheet/stusb4500l.pdf
+$ENDCMP
+#
+$CMP TPD2E2U06
+D (SOT-23-3) Dual-Channel High-Speed ESD Protection
+K ESD-Protection, SOT-23
+F http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf
 $ENDCMP
 #
 $CMP TPD4E1U06
