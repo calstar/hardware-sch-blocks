@@ -56,6 +56,12 @@ D Dual Operational Amplifier
 K dual opamp
 $ENDCMP
 #
+$CMP LT3461A
+D 3MHz Step-Up DC/DC Converter
+K Boost, converter, 38V
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3461Afa.pdf
+$ENDCMP
+#
 $CMP MAX17048G+
 F https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf
 $ENDCMP
