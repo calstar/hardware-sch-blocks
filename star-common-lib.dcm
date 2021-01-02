@@ -45,6 +45,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP HMC544AE
+D SPDT RF switch, reflective
+K RF switch
+F https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf
+$ENDCMP
+#
 $CMP HSCDRRN001BDSA3
 D Differential Pressure Sensor
 K Differential pressure
