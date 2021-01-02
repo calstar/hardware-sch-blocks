@@ -62,6 +62,12 @@ D Dual Operational Amplifier
 K dual opamp
 $ENDCMP
 #
+$CMP LT3461A
+D 3MHz Step-Up DC/DC Converter
+K Boost, converter, 38V
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3461Afa.pdf
+$ENDCMP
+#
 $CMP MAX17048G+
 F https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf
 $ENDCMP
@@ -82,6 +88,24 @@ $ENDCMP
 #
 $CMP SST26VF064B
 K flash memory spi
+$ENDCMP
+#
+$CMP STS9P3LLH6
+D P-MOSFET transistor, -30 V, 12 mΩ, -9A
+K transistor PMOS P-MOS P-MOSFET SO-8
+F https://www.st.com/resource/en/datasheet/sts9p3llh6.pdf
+$ENDCMP
+#
+$CMP STUSB4500LQTR
+D Stand-alone USB Type-C controller (auto-run mode), QFN-24
+K USB Type C Sink
+F https://www.st.com/resource/en/datasheet/stusb4500l.pdf
+$ENDCMP
+#
+$CMP TPD2E2U06
+D (SOT-23-3) Dual-Channel High-Speed ESD Protection
+K ESD-Protection, SOT-23
+F http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf
 $ENDCMP
 #
 $CMP TPD4E1U06
