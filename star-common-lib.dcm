@@ -45,6 +45,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP HMC544AE
+D SPDT RF switch, reflective
+K RF switch
+F https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf
+$ENDCMP
+#
 $CMP HSCDRRN001BDSA3
 D Differential Pressure Sensor
 K Differential pressure
@@ -56,12 +62,12 @@ D Dual Operational Amplifier
 K dual opamp
 $ENDCMP
 #
-$CMP MT25QL01GBBB8ESF-0SIT
-F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
-$ENDCMP
-#
 $CMP MAX17048G+
 F https://datasheets.maximintegrated.com/en/ds/MAX17048-MAX17049.pdf
+$ENDCMP
+#
+$CMP MT25QL01GBBB8ESF-0SIT
+F https://media.digikey.com/pdf/Data%20Sheets/Micron%20Technology%20Inc%20PDFs/MT25QL01GBBB.pdf
 $ENDCMP
 #
 $CMP SC18IS600
