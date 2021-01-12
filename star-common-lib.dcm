@@ -114,6 +114,10 @@ K ESD protection
 F https://www.ti.com/lit/ds/symlink/tpd4e1u06.pdf
 $ENDCMP
 #
+$CMP TPS54X94
+F https://www.ti.com/lit/ds/symlink/tps54394.pdf
+$ENDCMP
+#
 $CMP TVS0500DRV
 D Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6
 K EMI, ESD, TVS protection transient
