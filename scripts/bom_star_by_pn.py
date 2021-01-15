@@ -8,7 +8,7 @@
     Generate a csv BOM list.
     Components are sorted by digikey part number
     Fields are (if exist)
-    Qty, DIGIKEY, Reference(s)
+    Qty, DIGIKEY, Customer Reference, Reference(s)
 
     Command line:
     python "pathToFile/bom_csv_grouped_by_value.py" "%I" "%O.csv"
@@ -20,6 +20,7 @@ from __future__ import print_function
 import kicad_netlist_reader
 import csv
 import sys
+import os
 
 def myEqu(self, other):
     """myEqu is a more advanced equivalence function for components which is
@@ -39,10 +40,13 @@ def myEqu(self, other):
 # equivalency operator.
 kicad_netlist_reader.comp.__eq__ = myEqu
 
-if len(sys.argv) != 3:
-    print("Usage ", __file__, "<generic_netlist.xml> <output.csv>", file=sys.stderr)
+if len(sys.argv) != 3 and len(sys.argv) != 4:
+    print("Usage ", __file__, "<generic_netlist.xml> <output.csv> [QTY Multiplier]", file=sys.stderr)
     sys.exit(1)
 
+qtymult = 1
+if len(sys.argv) == 4:
+    qtymult = int(sys.argv[3])
 
 # Generate an instance of a generic netlist, and load the netlist tree from
 # the command line option. If the file doesn't exist, execution will stop
@@ -86,6 +90,8 @@ def writerow( acsvwriter, columns ):
 # (see kicad_netlist_reader.py)
 grouped = net.groupComponents(components)
 
+name = os.path.splitext(os.path.basename(sys.argv[1]))[0]
+
 row = []
 # Output component information organized by group, aka as collated:
 for group in grouped:
@@ -104,9 +110,10 @@ for group in grouped:
         for component in group:
             print("\t", component.getRef())
     else:
-        row.append( len(group) )
+        row.append( len(group)*qtymult )
         row.append( c.getField("DIGIKEY") )
-        row.append( refs );
+        row.append( name )
+        row.append( refs )
         writerow( out, row  )
 
 f.close()
