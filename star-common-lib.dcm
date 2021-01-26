@@ -102,6 +102,10 @@ K USB Type C Sink
 F https://www.st.com/resource/en/datasheet/stusb4500l.pdf
 $ENDCMP
 #
+$CMP TC4427AEUA
+F https://ww1.microchip.com/downloads/en/DeviceDoc/20001423J.pdf
+$ENDCMP
+#
 $CMP TPD2E2U06
 D (SOT-23-3) Dual-Channel High-Speed ESD Protection
 K ESD-Protection, SOT-23
