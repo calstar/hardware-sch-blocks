@@ -1,9 +1,9 @@
-(module TC4427AEUA (layer F.Cu) (tedit 60067B86)
+(module TC4427AEUA (layer F.Cu) (tedit 601602AB)
   (attr smd)
   (fp_text reference REF** (at 0.2286 -3.429) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value MSOP8_MC_MCH (at 0.0508 -5.4864) (layer F.SilkS)
+  (fp_text value MSOP8_MC_MCH (at 0.0508 -5.4864) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -1.4986 -0.7718) (end -1.4986 -1.1782) (layer F.Fab) (width 0.1524))
@@ -65,4 +65,9 @@
   (pad 3 smd rect (at -2.0447 0.325001) (size 1.524 0.4572) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -2.0447 -0.325001) (size 1.524 0.4572) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -2.0447 -0.974999) (size 1.524 0.4572) (layers F.Cu F.Paste F.Mask))
+  (model ${KISYS3DMOD}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
