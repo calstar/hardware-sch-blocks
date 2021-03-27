@@ -3,6 +3,7 @@
 *.bak
 *.bck
 *.pro
+*.ini
 fp-info-cache
 *-cache.lib
 ~
