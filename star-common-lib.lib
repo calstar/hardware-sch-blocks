@@ -117,12 +117,12 @@ X GND 8 200 -450 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ASMPR45-1X2-RK
+# Anderson_Powerpole
 #
-DEF ASMPR45-1X2-RK J 0 40 Y Y 1 L N
+DEF Anderson_Powerpole J 0 40 Y Y 1 L N
 F0 "J" -200 130 50 H V L BNN
-F1 "ASMPR45-1X2-RK" -200 -300 50 H V L BNN
-F2 "APP_ASMPR45-1X2-RK" 0 0 50 H I L BNN
+F1 "Anderson_Powerpole" -200 -300 50 H V L BNN
+F2 "star-common-lib:Powerpole_1336G1" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
 F5 "8.4mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
