@@ -30,14 +30,14 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 5300 4639 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:C C1201
 U 1 1 60597E34
 P 6950 3800
-AR Path="/6059AAA3/60597E34" Ref="C1"  Part="1" 
+AR Path="/6059AAA3/60597E34" Ref="C1201"  Part="1" 
 AR Path="/6059AC26/60597E34" Ref="C2"  Part="1" 
 AR Path="/6059B712/60597E34" Ref="C3"  Part="1" 
 AR Path="/605A8BDE/60597E34" Ref="C?"  Part="1" 
-F 0 "C1" H 7065 3846 50  0000 L CNN
+F 0 "C1201" H 7065 3846 50  0000 L CNN
 F 1 "0.1u" H 7065 3755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3650 50  0001 C CNN
 F 3 "~" H 6950 3800 50  0001 C CNN
