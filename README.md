@@ -2,6 +2,11 @@ View this project on [CADLAB.io](https://cadlab.io/project/22829).
 
 # hardware-sch-blocks
 
+
+## Attribution
+
+hackrf.\* libraries from GSG's hackrf project
+
 ## Refdes Space
 
 1000-1099: CAS\_bus/
