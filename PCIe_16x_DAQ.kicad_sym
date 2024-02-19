@@ -28,8 +28,8 @@
       )
     )
     (symbol "PCIe_x16_1_1"
-      (pin passive line (at -15.24 39.37 0) (length 3.81)
-        (name "~{PRSNT1}" (effects (font (size 1.27 1.27))))
+      (pin passive line (at -2.54 72.39 270) (length 3.81) hide
+        (name "+12V" (effects (font (size 1.27 1.27))))
         (number "A1" (effects (font (size 1.27 1.27))))
       )
       (pin passive line (at 0 72.39 270) (length 3.81) hide
